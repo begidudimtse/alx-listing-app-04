@@ -1,5 +1,5 @@
 
-
+import ReviewSection from "./ReviewSection";
 import React from "react";
 
 interface Property {
@@ -39,7 +39,7 @@ export default function PropertyDetail({ property }: PropertyDetailProps) {
       <p><strong>Location:</strong> {property.location}</p>
 
       <p>{property.description}</p>
-
+      <ReviewSection propertyId={property.id} />
     </div>
   );
 }
